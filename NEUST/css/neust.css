@@ -1,0 +1,422 @@
+/* ============================
+   GLOBAL RESET & BASE
+============================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 56px;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* ============================
+   TOP BAR
+============================ */
+.top-strip {
+  background: #ffffff;
+  padding: 6px 0;
+}
+
+.top-logo {
+  height: 35px;
+  margin-right: 10px;
+}
+
+.thin-blue {
+  height: 4px;
+  background: #1c2c8c;
+}
+
+/* ============================
+   MAIN NAVBAR
+============================ */
+.main-nav {
+  background-color: #0d1a4f;
+  padding: 10px 0;
+}
+
+.main-nav .navbar-brand {
+  color: #ffcc00;
+  font-size: 18px;
+}
+
+.main-nav .navbar-brand:hover {
+  color: #ffffff;
+}
+
+/* ============================
+   HERO LOGO SECTION
+============================ */
+.hero-sectionlogo {
+  background-color: #0d1a4f;
+  color: white;
+}
+
+.hero-top {
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-top img {
+  max-width: 180px;
+}
+
+.hero-top h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.hero-top small {
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+/* ============================
+   HERO NAVBAR
+============================ */
+.hero-navbar {
+  background-color: #0d1a4f;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 8px 30px;
+}
+
+.hero-navbar .nav-link {
+  color: #ffffff;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+.hero-navbar .nav-link:hover,
+.hero-navbar .nav-link.active {
+  color: #ffcc00;
+}
+
+.hero-navbar .dropdown-menu {
+  background-color: #0d1a4f;
+  border: none;
+}
+
+.hero-navbar .dropdown-item {
+  color: white;
+  font-size: 14px;
+}
+
+.hero-navbar .dropdown-item:hover {
+  background-color: #173072;
+  color: #ffcc00;
+}
+
+/* ============================
+   CAROUSEL
+============================ */
+.carousel,
+.carousel-inner,
+.carousel-item {
+  width: 100%;
+  position: relative;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.carousel-item img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 10;
+}
+
+/* ============================
+   HERO VISION / MISSION
+============================ */
+.hero-section {
+  position: relative;
+  min-height: 580px;
+  background: url("../PHOTOS2/background2.jpg") center / cover no-repeat;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  width: 45%;
+  height: 100%;
+  padding: 80px 60px;
+  color: #ffffff;
+  background: linear-gradient(
+    to right,
+    rgba(13, 26, 79, 0.95) 0%,
+    rgba(13, 26, 79, 0.9) 60%,
+    rgba(13, 26, 79, 0.75) 80%,
+    rgba(13, 26, 79, 0) 100%
+  );
+}
+
+.hero-overlay h2 {
+  font-weight: bold;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+
+.hero-overlay p {
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+/* ============================
+   DIRECTOR CARDS
+============================ */
+.director-card {
+  border: none;
+  background: transparent;
+  text-align: center;
+}
+
+.director-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.director-card .card-body {
+  background-color: #0d1a4f;
+  color: white;
+  padding: 10px;
+}
+
+.director-card h6 {
+  font-size: 14px;
+}
+
+.director-card small {
+  font-size: 12px;
+}
+
+/* ============================
+   COURSES SECTION
+============================ */
+.courses-section {
+  background: #f3e51c;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.courses-logo {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.courses-title {
+  background: #c99a52;
+  color: white;
+  padding: 15px 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 4px;
+}
+
+.college-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.courses-section ul {
+  list-style: none;
+}
+
+.courses-section li {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+/* ============================
+   ANIHAN BUTTONS
+============================ */
+.anihan-btn {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-shadow: 1px 2px 2px #000;
+}
+
+.anchorline {
+  color: #1b0169;
+  text-decoration: none;
+}
+
+.anchorline:hover {
+  text-decoration: underline;
+}
+
+/* FEATURED NEWS IMAGE */
+.news-featured-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+/* ============================
+   FOOTER
+============================ */
+.footer-info {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+
+.footer-title {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-text {
+  font-size: 14px;
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+}
+
+.footer-bottom {
+  background-color: #dff6f6;
+  font-size: 14px;
+}
+
+/* ============================
+   LIWANAG PROGRAM
+============================ */
+.liwanag-section {
+  background-color: #f3ecff;
+}
+
+.liwanag-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.liwanag-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.liwanag-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.2)
+  );
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.liwanag-overlay h6 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.liwanag-overlay p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* ============================
+   RESPONSIVE BREAKPOINTS
+============================ */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .hero-top {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-overlay {
+    width: 100%;
+    padding: 40px 20px;
+    background: rgba(13, 26, 79, 0.95);
+  }
+
+  .hero-section {
+    min-height: auto;
+  }
+
+  .carousel-item img {
+    height: 250px;
+  }
+
+  .courses-section {
+    padding: 50px 20px;
+  }
+
+  .courses-title {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  .footer-info {
+    text-align: center;
+    padding: 30px 15px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 576px) {
+  .carousel-item img {
+    height: 200px;
+  }
+
+  .director-card img {
+    height: 160px;
+  }
+
+  .anihan-btn {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+
+  .liwanag-overlay h6 {
+    font-size: 13px;
+  }
+
+  .liwanag-overlay p {
+    font-size: 12px;
+  }
+}
